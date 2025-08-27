@@ -402,6 +402,8 @@ W bazie danych (pliku analyses.db) znajdują się 3 pliki test1, test2 oraz dost
 Ze względu na brak możliwości wgrania dużych plików, podsyłam link do folderu na google drive z plikami i bazą danych:
 https://drive.google.com/drive/folders/1PjaXMWjwkNHagNvcIWizJtVlrJr3DP6u?usp=sharing
 
+Plik analyses.db należy wkleić do folderu nadrzędnego projektu
+
 ## Autorzy
 
 **Projekt UMPAnUMiW - Semestr 6**
