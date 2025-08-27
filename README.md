@@ -148,6 +148,20 @@ pip install -r requirements.txt
 
 ---
 
+## Potwierdzenie uniwersalności
+
+![Aplikacja na telefonie z androidem](screenshots/android1.png)
+*Aplikacja na telefonie z androidem*
+
+![Aplikacja na telefonie z androidem](screenshots/android2.png)
+*Aplikacja na telefonie z androidem*
+
+![Aplikacja na wirtualnej maszynie z ubuntu](screenshots/linux1.png)
+*Aplikacja uruchomiona w konsoli*
+
+![Aplikacja na wirtualnej maszynie z ubuntu](screenshots/linux2.png)
+*Aplikacja uruchomiona w konsoli*
+
 ## Scenariusze użytkowania
 
 ### Scenariusz 1: Analiza podstawowa pliku PCAP
@@ -381,9 +395,12 @@ Wizualizer-ruchu-sieciowego/
     └── ...
 ```
 
-## Testowanie
+## Testowanie / uruchomienie
 
 W bazie danych (pliku analyses.db) znajdują się 3 pliki test1, test2 oraz dostarczony przez prowadzącego PCS-F plik z urządzeń uczelnianych do przetestowania programu.
+
+Ze względu na brak możliwości wgrania dużych plików, podsyłam link do folderu na google drive z plikami i bazą danych:
+https://drive.google.com/drive/folders/1PjaXMWjwkNHagNvcIWizJtVlrJr3DP6u?usp=sharing
 
 ## Autorzy
 
