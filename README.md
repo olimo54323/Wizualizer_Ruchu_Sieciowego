@@ -157,10 +157,10 @@ pip install -r requirements.txt
 *Aplikacja na telefonie z androidem*
 
 ![Aplikacja na wirtualnej maszynie z ubuntu](screenshots/linux1.png)
-*Aplikacja uruchomiona w konsoli*
+*Aplikacja na wirtualnej maszynie z ubuntu*
 
 ![Aplikacja na wirtualnej maszynie z ubuntu](screenshots/linux2.png)
-*Aplikacja uruchomiona w konsoli*
+*Aplikacja na wirtualnej maszynie z ubuntu*
 
 ## Scenariusze użytkowania
 
