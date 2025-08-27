@@ -1,6 +1,6 @@
 # Wizualizer Ruchu Sieciowego
 
-*Network Traffic Visualizer* - narzędzie do analizy i wizualizacji plików PCAP z zaawansowanymi funkcjami raportowania.
+*Wizualizer Ruchu Sieciowego* - narzędzie do analizy i wizualizacji plików PCAP z zaawansowanymi funkcjami raportowania.
 
 ![Screenshot głównej strony aplikacji](screenshots/main_page.png)
 *Główny interfejs aplikacji*
