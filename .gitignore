@@ -50,3 +50,7 @@ env/
 # Logi
 *.log
 logs/
+
+#pliki bazodanowe
+*.db
+*.sqlite3

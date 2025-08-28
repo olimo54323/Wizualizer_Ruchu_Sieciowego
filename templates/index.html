@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wizualizer ruchu sieciowego</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Wizualizer ruchu sieciowego</h1>
+        
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+                    <div class="alert alert-info">{{ message }}</div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+        
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h4><i class="fas fa-upload"></i> Wgraj plik PCAP</h4>
+                    </div>
+                    <div class="card-body">
+                        <form action="{{ url_for('upload_file') }}" method="post" enctype="multipart/form-data">
+                            <div class="mb-3">
+                                <input type="file" class="form-control" name="file" accept=".pcap,.pcapng,.cap" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">
+                                <i class="fas fa-upload"></i> Wgraj i analizuj
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h4><i class="fas fa-history"></i> Poprzednie analizy</h4>
+                    </div>
+                    <div class="card-body">
+                        {% if analyses %}
+                            <div class="list-group">
+                                {% for analysis in analyses %}
+                                    <a href="{{ url_for('view_analysis', analysis_id=analysis.id) }}" 
+                                       class="list-group-item list-group-item-action">
+                                        <div class="d-flex w-100 justify-content-between">
+                                            <h6>{{ analysis.filename }}</h6>
+                                            <small>{{ analysis.total_packets }} pakiety/ów</small>
+                                        </div>
+                                        <small class="text-muted">{{ analysis.upload_date }}</small>
+                                    </a>
+                                {% endfor %}
+                            </div>
+                        {% else %}
+                            <p class="text-center text-muted">Brak analiz</p>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
